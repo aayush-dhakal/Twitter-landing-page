@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.navbar__left a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #4d4d4d;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 530;
+}
+
+.navbar__left > :first-child {
+  color: #1d9bf0;
+  text-decoration: underline;
+  text-underline-offset: 1.2rem;
+  text-decoration-thickness: 2px;
+}
+
+.navbar__left .fa-home {
+  color: #1d9bf0;
+}
+
+.navbar__center i {
+  color: #1d9bf0;
+  font-size: 1.5rem;
+}
+
+.navbar__right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__right div input {
+  border: none;
+  border-radius: 15px;
+  background-color: #eeeeee;
+  height: 2rem;
+  padding: 0.7rem;
+  width: 220px;
+}
+
+.navbar__right .navbar__search__container {
+  position: relative;
+}
+
+.navbar__right div .fa-search {
+  color: #9c9a9a;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 0.9rem;
+}
+
+.navbar__right .navbar__profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.navbar__right button {
+  border: none;
+  border-radius: 16px;
+  background-color: #1d9bf0;
+  color: #ffffff;
+  font-size: 15px;
+  width: 75px;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.main__content__section {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 1rem;
+  margin: 1rem auto;
+}
+
+.main__content__section > div {
+  color: #000000;
+}
+
+.main__left__top {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.main__left__top img {
+  width: 100%;
+  height: 100px;
+}
+
+.main__left__profile {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.main__left__profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: -20px 15px 0 10px;
+  border: 2px solid #ffffff;
+}
+
+.main__left__userinfo .main__left__fullname {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.4rem 0 0.3rem 0;
+}
+
+.main__left__userinfo .main__left__twitterhandle {
+  color: #9c9c9c;
+}
+
+.main__left__userdetail {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.1rem;
+}
+
+.userdetail__section > p:first-child {
+  color: #4a4a49;
+  font-size: 18px;
+}
+
+.userdetail__section > p:nth-of-type(2) {
+  color: #1d9bf0;
+  font-size: 1.5rem;
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.main__left__bottom {
+  background-color: #ffffff;
+}
+
+.main__left__bottom {
+  padding: 1rem;
+}
+
+.main__left__bottom__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main__left__bottom__heading .left__bottom__change {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d9bf0;
+}
+
+.trends__tweets {
+  color: #1d9bf0;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.4rem 0;
+}
+
+.trends__tweets .tweet__counts {
+  color: #454545;
+  font-size: 14px;
+  font-weight: 540;
+}
+
+.post__tweet__section {
+  background-color: #cbe5f7;
+  display: flex;
+  justify-content: baseline;
+}
+
+.post__tweet__section > * {
+  margin: 5px;
+}
+
+.post__tweet__profile__image img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 7px 0 0 10px;
+}
+
+.tweet__input {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.tweet__input input {
+  flex: 1;
+  margin: 5px 7px 5px 0;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  color: #1d9bf0;
+  font-weight: 550;
+}
+
+.tweet__input i {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #1d9bf0;
+  font-size: 18px;
+}
+
+.tweets__feed__section {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+
+.tweet__feed__logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.tweet__feed__content {
+  flex: 1;
+  margin-left: 5px;
+}
+
+.content__heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.content__heading i {
+  color: #1d9bf0;
+}
+
+.content__heading .content__twitter__handle {
+  color: #9c9a9a;
+}
+
+.content__subheading > p:first-child {
+  color: #4d4d4d;
+  font-size: 17px;
+  font-weight: 550;
+  margin: 3px 0;
+}
+
+.content__subheading > p:nth-of-type(2) {
+  color: #1d9bf0;
+  margin-bottom: 13px;
+}
+
+.content__subheading > p:nth-of-type(3) {
+  margin-top: 4px;
+  color: #9c9a9a;
+  font-size: 14px;
+}
+
+.content__subheading > p:nth-of-type(3) i {
+  margin-right: 5px;
+}
+
+.content__image img {
+  margin: 13px 0;
+  width: 100%;
+  height: 380px;
+  border-radius: 8px;
+}
+
+.content__bottom__section {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.content__bottom__section i {
+  color: #9c9a9a;
+  font-size: 18px;
+}
+
+.content__dropdown {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 19px;
+}
+
+.main__right__content__top {
+  background-color: #ffffff;
+  padding: 18px 15px 0 15px;
+}
+
+.main__right__heading {
+  margin-bottom: 20px;
+}
+
+.main__right__content p > span {
+  color: #1d9bf0;
+  font-size: 14px;
+}
+
+.main__right__content p > span:first-child {
+  color: #000000;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.follow__suggestion {
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #9c9a9a;
+}
+
+.follow__suggestion__image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.follow__suggestion__content > span:first-child {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.follow__suggestion__content .fa-check-circle {
+  color: #1d9bf0;
+}
+
+.follow__suggestion__content .content__twitter__handle {
+  color: #9c9a9a;
+}
+
+.follow__suggestion__content button {
+  width: 90px;
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid #1d9bf0;
+  color: #1d9bf0;
+  font-weight: 600;
+  margin: 6px 0;
+  background-color: #ffffff;
+}
+
+.follow__promotion__section {
+  color: #9c9a9a;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.follow__promotion__section i {
+  color: #333231;
+}
+
+.follow__cancel {
+  position: absolute;
+  right: 10px;
+  color: #9c9a9a;
+}
+
+.people__you__know {
+  color: #1d9bf0;
+  padding: 18px 0 18px 8px;
+}
+
+.people__you__know i {
+  padding-right: 8px;
+}
+
+.main__right__content__bottom {
+  margin-top: 10px;
+  background-color: #ffffff;
+  padding: 15px 0 15px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main__right__content__bottom > * {
+  color: #9c9a9a;
+}
+
+.twitter__advertise {
+  margin-top: 2px;
+  padding: 18px 10px;
+  background-color: #ffffff;
+  color: #1d9bf0;
+}
+
+.twitter__advertise i {
+  margin: 0 10px;
+}

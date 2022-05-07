@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter clone</title>
+    <script
+      src="https://kit.fontawesome.com/10f6dbc809.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- navabr section -->
+    <navbar class="navbar">
+      <div class="navbar__left">
+        <a href="#" class="navbar__home">
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp; Home
+        </a>
+        <a href="#">
+          <i class="fa fa-bell-o" aria-hidden="true"></i>
+          Notifications</a
+        >
+        <a href="#">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          Messages</a
+        >
+      </div>
+
+      <div class="navbar__center">
+        <div><i class="fa fa-twitter" aria-hidden="true"></i></div>
+      </div>
+
+      <div class="navbar__right">
+        <div class="navbar__search__container">
+          <input
+            type="text"
+            class="navbar__serach"
+            placeholder="Search Twitter"
+          />
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="navbar__profile">
+          <img
+            src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"
+            alt="profile-pic"
+          />
+        </div>
+        <div>
+          <button>Tweet</button>
+        </div>
+      </div>
+    </navbar>
+    <!-- end of navbar section  -->
+
+    <!-- main content section -->
+    <main class="main__content__section">
+      <div class="left__content">
+        <div class="main__left__top">
+          <img
+            src="https://images.unsplash.com/photo-1561009226-7a820d647a40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmxvcmlkYSUyMHN1bnNldHxlbnwwfHwwfHw%3D&w=1000&q=80"
+            alt="sun-set-view"
+          />
+          <div class="main__left__profile">
+            <img
+              src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"
+              alt="profile-pic"
+            />
+            <div class="main__left__userinfo">
+              <p class="main__left__fullname">David Thorn</p>
+              <p class="main__left__twitterhandle">@_davidthron</p>
+            </div>
+          </div>
+
+          <div class="main__left__userdetail">
+            <div class="userdetail__section tweets__info">
+              <p>Tweets</p>
+              <p>4</p>
+            </div>
+            <div class="userdetail__section following__info">
+              <p>Following</p>
+              <p>15</p>
+            </div>
+            <div class="userdetail__section followers__info">
+              <p>Followers</p>
+              <p>5</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- main left bottom section  -->
+        <div class="main__left__bottom">
+          <div class="main__left__bottom__heading">
+            Trends for you - <span class="left__bottom__change">Change</span>
+          </div>
+
+          <div class="trends__tweets">
+            #Sommerhaus
+            <p class="tweet__counts">3638 Tweets</p>
+          </div>
+          <div class="trends__tweets">#Celebrity</div>
+          <div class="trends__tweets">#News</div>
+          <div class="trends__tweets">#VBGFDTDF</div>
+          <div class="trends__tweets">#football</div>
+          <div class="trends__tweets">#cricket</div>
+          <div class="trends__tweets">#global</div>
+          <div class="trends__tweets">#Celebrity</div>
+          <div class="trends__tweets">#News</div>
+          <div class="trends__tweets">#Gadgets</div>
+        </div>
+        <!-- end of main left bottom section  -->
+      </div>
+
+      <div class="main__center__content">
+        <!-- post tweet section  -->
+        <div class="post__tweet__section">
+          <div class="post__tweet__profile__image">
+            <img
+              src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"
+              alt="profile-pic"
+            />
+          </div>
+          <div class="tweet__input">
+            <input type="text" value="What's happening?" />
+            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!-- end of tweet post section  -->
+
+        <!-- tweet feed section  -->
+        <div class="tweets__feed__section">
+          <div class="tweet__feed__logo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzDJR64CkJD5fnPohr3GsSa1m5dFPWfJ2x0LP40BFyEsxDk-jLodzwFhZt5J5_gxxZOw&usqp=CAU"
+              alt="profile-pic"
+            />
+          </div>
+          <div class="tweet__feed__content">
+            <div class="content__heading">
+              SPIEGEL ONLINE
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span class="content__twitter__handle">@SPIEGELONLINE - 13m</span>
+            </div>
+            <div class="content__subheading">
+              <p>
+                Briten in Spanien: Touristen zahlen Obdachlosem 100 Euro fur
+                Tattoo
+              </p>
+              <p>spiegel.de/panorama/gesel...</p>
+              <p>
+                <i class="fa fa-globe" aria-hidden="true"></i>Translate Tweet
+              </p>
+            </div>
+            <div class="content__image">
+              <img
+                src="https://i.pinimg.com/originals/03/6e/04/036e046ae09349f7ff7ebc419ad66900.jpg"
+                alt="content-image"
+              />
+            </div>
+            <div class="content__bottom__section">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-retweet" aria-hidden="true"></i>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+
+            <div class="content__dropdown">
+              <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <!-- end of tweet feed section  -->
+      </div>
+
+      <div class="main__right__content">
+        <div class="main__right__content__top">
+          <div class="main__right__heading">
+            <p>
+              <span>Who to follow - </span>
+              <span>Refresh</span>
+              -
+              <span>View all</span>
+            </p>
+          </div>
+
+          <div class="follow__suggestions__section">
+            <div class="follow__suggestion">
+              <div class="follow__suggestion__image">
+                <img
+                  src="https://wallpaperaccess.com/full/3526234.jpg"
+                  alt="suggestion-logo"
+                />
+              </div>
+              <div class="follow__suggestion__content">
+                <span>CGTN</span>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span class="content__twitter__handle">@CGOfficial</span>
+                <div>
+                  <button>Follow</button>
+                </div>
+                <div class="follow__promotion__section">
+                  <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                  <span>Promoted</span>
+                </div>
+              </div>
+              <div class="follow__cancel">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="follow__suggestion">
+              <div class="follow__suggestion__image">
+                <img
+                  src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/TNC_PC2021_450b6776aee8195158c113bac7b342a0-original.jpg?crop=0,26,4000,2200&wid=4000&hei=2200&scl=1.0"
+                  alt="suggestion-logo"
+                />
+              </div>
+              <div class="follow__suggestion__content">
+                <span>Abcd</span>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span class="content__twitter__handle">@AbOfficial</span>
+                <div>
+                  <button>Follow</button>
+                </div>
+              </div>
+              <div class="follow__cancel">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="follow__suggestion">
+              <div class="follow__suggestion__image">
+                <img
+                  src="https://media.comicbook.com/2020/05/dragon-ball-super-when-will-should-goku-master-ultra-instinct-1219439-1280x0.jpeg"
+                  alt="suggestion-logo"
+                />
+              </div>
+              <div class="follow__suggestion__content">
+                <span>CGTN</span>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span class="content__twitter__handle">@XYzOfficial</span>
+                <div>
+                  <button>Follow</button>
+                </div>
+                <div class="follow__promotion__section">
+                  <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                  <span>Promoted</span>
+                </div>
+              </div>
+              <div class="follow__cancel">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="people__you__know">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <span>Find people you know</span>
+          </div>
+        </div>
+
+        <div class="main__right__content__bottom">
+          <span> &copy;2018 Twitter </span>
+          <span> About </span>
+          <span> Help Center </span>
+          <span> Terms </span>
+          <span> Privacy policy </span>
+          <span> Imprint </span>
+          <span> About </span>
+          <span> Marketing </span>
+          <span> Terms </span>
+          <span> Developers </span>
+          <span> Business </span>
+          <span> Jobs </span>
+          <span> Ads </span>
+          <span> Blog Status </span>
+        </div>
+
+        <div class="twitter__advertise">
+          <i class="fa fa-external-link-square" aria-hidden="true"></i>Advertise
+          with Twitter
+        </div>
+      </div>
+    </main>
+    <!-- end of main content section -->
+  </body>
+</html>
